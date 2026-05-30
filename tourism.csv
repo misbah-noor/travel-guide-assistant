@@ -1,0 +1,13 @@
+place,type,budget,weather,days,group_type,activities,description
+Hunza,Nature,50000,Cold,5,Family,Hiking,Beautiful mountains and valleys
+Skardu,Adventure,70000,Cold,7,Friends,Camping,Best for adventure lovers
+Murree,Nature,20000,Cold,3,Family,Shopping,Famous hill station
+Lahore,Historical,30000,Hot,2,Couple,Historical Tours,Cultural city
+Swat,Nature,40000,Cold,4,Family,Boating,Green valleys and rivers
+Naran,Adventure,45000,Cold,5,Friends,Hiking,Popular tourist destination
+Fairy Meadows,Adventure,60000,Cold,6,Friends,Trekking,Beautiful mountain scenery
+Neelum Valley,Nature,35000,Cold,4,Family,Boating,Famous green valley
+Karachi,Historical,40000,Hot,3,Friends,Shopping,Modern city attractions
+Gwadar,Adventure,55000,Hot,5,Couple,Beach,Beautiful coastal area
+Chitral,Nature,45000,Cold,5,Family,Camping,Famous cultural valley
+Islamabad,Historical,30000,Moderate,2,Couple,Sightseeing,Beautiful capital city
