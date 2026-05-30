@@ -57,18 +57,18 @@ st.markdown("""
     font-size:18px;
 }
 
-/* ==============================
-   MAIN CONTENT TEXT ONLY
-   (DO NOT affect sidebar)
-   ============================== */
 
-div[data-testid="stAppViewContainer"] main h1,
-div[data-testid="stAppViewContainer"] main h2,
-div[data-testid="stAppViewContainer"] main h3,
-div[data-testid="stAppViewContainer"] main h4,
-div[data-testid="stAppViewContainer"] main p,
-div[data-testid="stAppViewContainer"] main span,
-div[data-testid="stAppViewContainer"] main label {
+section[data-testid="stMain"] h1,
+section[data-testid="stMain"] h2,
+section[data-testid="stMain"] h3,
+section[data-testid="stMain"] h4,
+section[data-testid="stMain"] p,
+section[data-testid="stMain"] span,
+section[data-testid="stMain"] label {
+    color: #111 !important;
+}
+
+div[data-testid="stMain"] * {
     color: #111 !important;
 }
 
