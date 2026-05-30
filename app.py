@@ -57,6 +57,21 @@ st.markdown("""
     font-size:18px;
 }
 
+/* ==============================
+   MAIN CONTENT TEXT ONLY
+   (DO NOT affect sidebar)
+   ============================== */
+
+div[data-testid="stAppViewContainer"] main h1,
+div[data-testid="stAppViewContainer"] main h2,
+div[data-testid="stAppViewContainer"] main h3,
+div[data-testid="stAppViewContainer"] main h4,
+div[data-testid="stAppViewContainer"] main p,
+div[data-testid="stAppViewContainer"] main span,
+div[data-testid="stAppViewContainer"] main label {
+    color: #111 !important;
+}
+
 /* Sidebar background */
 section[data-testid="stSidebar"]{
     background:linear-gradient(#013220);
