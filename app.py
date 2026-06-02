@@ -8,7 +8,7 @@ import os
 # ==============================
 
 st.set_page_config(
-    page_title="AI Travel Explorer",
+    page_title="Travel Explorer AI",
     page_icon="🌍",
     layout="wide"
 )
@@ -19,10 +19,12 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+            
 /* Main Background */
 .stApp{
     background-color:#f8fafc;
+    font-family: 'DM Sans', sans-serif;
 }
 
 /* Navbar */
@@ -40,21 +42,28 @@ st.markdown("""
 
 /* Hero */
 .hero{
-    background:linear-gradient(135deg,#8b5cf6,#f97316);
-    padding:40px;
-    border-radius:20px;
-    color:white;
-    text-align:center;
-    margin-bottom:25px;
-    box-shadow:0px 10px 30px rgba(0,0,0,0.12);
+    color:black;
+    text-align:left;
 }
-
 .hero h1{
-    font-size:42px;
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:10px;
 }
-
 .hero p{
     font-size:18px;
+    color:#333;
+}
+
+   /* ---- Cards ---- */
+[data-testid="stMain"] .stContainer {
+    background: rgba(13, 20, 35, 0.85) !important;
+    border: 1px solid rgba(255,255,255,0.07) !important;
+    border-radius: 20px !important;
+    padding: 28px 32px !important;
+    backdrop-filter: blur(20px) !important;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset,
+                0 20px 60px rgba(0,0,0,0.4) !important;
 }
 
 
@@ -105,9 +114,24 @@ section[data-testid="stSidebar"] h3 {
 }
 
 /* Images */
+            
 img{
     border-radius:20px;
 }
+
+/* ---- Footer ---- */
+footer { 
+    visibility: hidden; 
+    }
+.footer-custom {
+    text-align: center;
+    font-size: 0.78rem;
+    color: #7e8fa6;
+    margin-top: 3rem;
+    letter-spacing: 0.04em;
+}
+.footer-dot { color: #FF0000; margin: 0 6px; }
+
 
 </style>
 """, unsafe_allow_html=True)
@@ -183,9 +207,11 @@ text-align:center;
 
 
 st.markdown("""
-## ✈️ Find Your Perfect Travel Destination
-Discover places based on your mood, budget & weather 🌿
-""")
+<div class="hero">
+<h1>🌍 Travel Explorer AI</h1>
+<p>Discover personalized destinations based on your budget, weather, trip duration and travel style.</p>
+</div>
+""", unsafe_allow_html=True)
 
 st.image(
     "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
@@ -352,9 +378,13 @@ if user_input:
 st.divider()
 
 st.markdown("""
-<center>
-<p style="color:gray;">
-🌍 Built with Streamlit + AI + Python
-</p>
-</center>
+<div class="footer-custom">
+    TravelExplorer AI
+    <span class="footer-dot">•</span>
+    Streamlit
+    <span class="footer-dot">•</span>
+    Tourism Recommendation System
+    <span class="footer-dot">•</span>
+    For Educational Use Only
+</div>
 """, unsafe_allow_html=True)
